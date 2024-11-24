@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "6774e036-35b7-4084-ac15-39e41d91d288",
+		"name": "Stackdot Node JS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25139780"
+	},
+	"item": [
+		{
+			"name": "board",
+			"item": [
+				{
+					"name": "add Board",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"CBSC\",\r\n    \"instituteType\": \"6741f0c38467e814ed57c372\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/board/add-board",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"board",
+								"add-board"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Board",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/board/get-board?id=dfsfsdfsd",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"board",
+								"get-board"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "dfsfsdfsd"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medium",
+			"item": [
+				{
+					"name": "add Medium",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"English\",\r\n    \"instituteType\": \"6741f0c38467e814ed57c372\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/medium/add-medium",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"medium",
+								"add-medium"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Medium",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/medium/get-medium",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"medium",
+								"get-medium"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Standard",
+			"item": [
+				{
+					"name": "add Standard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"10th\",\r\n    \"class\": \"6742d1f73cde108e402e9efd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/standard/add-standard",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"standard",
+								"add-standard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Standard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/standard/get-standard",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"standard",
+								"get-standard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "add Subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gujarati\",\r\n    \"standard\": \"6742d407a4b0594cfa01d11c\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/subject/add-subject",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"subject",
+								"add-subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subject",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/subject/get-subject",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"subject",
+								"get-subject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Institute Registration",
+			"item": [
+				{
+					"name": "add Institute Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"institute\": \"6741f0c38467e814ed57c372\",\r\n  \"board\": \"6742c3dee04f7a1cbda2521f\",   \r\n  \"medium\": \"6742cda9588b73e2c3ecfd97\",  \r\n  \"class\": \"6742d1f73cde108e402e9efd\",   \r\n  \"standard\": \"6742d407a4b0594cfa01d11c\",\r\n  \"subjects\": [\r\n    \"6742d5cad1363eacb91d0b62\",         \r\n    \"6742d5d7d1363eacb91d0b66\"          \r\n  ],\r\n  \"university\": \"6741f0c48467e814ed57c37f\",\r\n  \"degree\": \"6741f0c48467e814ed57c38e\",   \r\n  \"exam\": \"6741f0c48467e814ed57c39d\"      \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/institute-registration/add-institute-registration",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"institute-registration",
+								"add-institute-registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Institute Registration",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/institute-registration/get-institute-registration",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"institute-registration",
+								"get-institute-registration"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Class Category",
+			"item": [
+				{
+					"name": "add Class Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pre-Primary\",\r\n    \"instituteType\": \"6741f0c38467e814ed57c372\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/class-catagory/add-class-category",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"class-catagory",
+								"add-class-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Class Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/class-catagory/get-class-category",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"class-catagory",
+								"get-class-category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
